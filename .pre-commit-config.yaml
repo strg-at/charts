@@ -50,6 +50,13 @@ repos:
         args:
           - --markdown-linebreak-ext=md
 
+  - repo: https://github.com/norwoodj/helm-docs
+    rev: v1.6.0
+    hooks:
+      - id: helm-docs
+        args:
+          - --chart-search-root=charts
+  # asure mardownlint run after helm-docs
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.31.0
     hooks:
@@ -57,10 +64,3 @@ repos:
         args:
           - --config
           - .config/.markdownlint-config.yaml
-
-  - repo: https://github.com/norwoodj/helm-docs
-    rev: v1.6.0
-    hooks:
-      - id: helm-docs
-        args:
-          - --chart-search-root=charts
