@@ -1,0 +1,49 @@
+apiVersion: v1
+entries:
+  behave-content-indexer:
+  - apiVersion: v2
+    appVersion: 2.5.5
+    created: "2022-02-07T18:47:55.057523878Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave content-indexer Helm chart for Kubernetes
+    digest: 164c2194d340a3ceb391d00d2d0e330c3aa004446e19d984d2d4a092ab663f78
+    home: https://github.com/strg-at/charts/tree/main/behave-content-indexer
+    keywords:
+    - behave
+    - content-indexer
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-content-indexer
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-content-indexer-0.1.1/behave-content-indexer-0.1.1.tgz
+    version: 0.1.1
+  behave-crawler:
+  - apiVersion: v2
+    appVersion: 1.4.4
+    created: "2022-02-07T18:47:55.188501256Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave crawler
+    digest: 9e002448c41065c0e79dd0242aa7173bbabaf7b8ef6f64609fe95def0cd26f25
+    home: https://github.com/strg-at/charts/tree/main/behave-crawler
+    keywords:
+    - behave
+    - crawler
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-crawler
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-crawler-0.1.1/behave-crawler-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-02-07T18:47:55.188826559Z"
