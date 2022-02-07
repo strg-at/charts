@@ -1,5 +1,4 @@
 <!-- markdownlint-disable MD041 -->
-<!-- markdownlint-disable MD033 -->
 
 <!-- PROJECT SHIELDS -->
 [![gh-ci][gh-ci-shield]][gh-ci-url]
@@ -10,8 +9,6 @@
 # STRG. helm charts
 
 A collection of charts we use in our projects.
-
-<br />
 
 <!-- GETTING STARTED -->
 
