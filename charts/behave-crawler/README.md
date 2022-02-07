@@ -2,19 +2,15 @@
 
 ![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.4.4](https://img.shields.io/badge/AppVersion-1.4.4-informational?style=flat-square)
 
-STRG.BeHave crawler Helm chart for Kubernetes
+STRG.BeHave crawler
 
-**Homepage:** <https://bitbucket.strg.at/projects/BHV/repos/crawler/browse/helm/README.md>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/behave-crawler>
 
 ## Maintainers
 
 | Name | Email | Url |
 | ---- | ------ | --- |
 | Nils Müller | nils.mueller@strg.at |  |
-
-## Source Code
-
-* <https://bitbucket.strg.at/projects/BHV/repos/crawler>
 
 ## Requirements
 
