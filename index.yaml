@@ -3,6 +3,28 @@ entries:
   behave-content-indexer:
   - apiVersion: v2
     appVersion: 2.5.5
+    created: "2022-02-07T19:56:22.376662961Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave content-indexer Helm chart for Kubernetes
+    digest: 6a3ccad0466896a808d734cdb4747dea1b3152436cf6d3d6df83c1cffcae7d72
+    home: https://github.com/strg-at/tree/main/charts/behave-content-indexer
+    keywords:
+    - behave
+    - content-indexer
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-content-indexer
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-content-indexer-0.1.2/behave-content-indexer-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 2.5.5
     created: "2022-02-07T18:47:55.057523878Z"
     dependencies:
     - name: common
@@ -26,6 +48,28 @@ entries:
   behave-crawler:
   - apiVersion: v2
     appVersion: 1.4.4
+    created: "2022-02-07T19:56:22.515665138Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave crawler
+    digest: a6712eda8259e72fb44e1115045fce620a382b5567d93fc91c641ff53c43df47
+    home: https://github.com/strg-at/tree/main/charts/behave-crawler
+    keywords:
+    - behave
+    - crawler
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-crawler
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-crawler-0.1.2/behave-crawler-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.4.4
     created: "2022-02-07T18:47:55.188501256Z"
     dependencies:
     - name: common
@@ -46,4 +90,4 @@ entries:
     urls:
     - https://github.com/strg-at/charts/releases/download/behave-crawler-0.1.1/behave-crawler-0.1.1.tgz
     version: 0.1.1
-generated: "2022-02-07T18:47:55.188826559Z"
+generated: "2022-02-07T19:56:22.515690655Z"
