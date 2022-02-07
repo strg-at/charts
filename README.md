@@ -4,7 +4,7 @@
 [![gh-ci][gh-ci-shield]][gh-ci-url]
 [![pre-commit][pre-commit-shield]][pre-commit-url]
 [![renovate][renovate-shield]][renovate-dashboard-url]
-<!-- [![license][license-shield]][license-url] -->
+[![license][license-shield]][license-url]
 
 # STRG. helm charts
 
@@ -37,5 +37,5 @@ helm repo add gh-strg https://strg-at.github.io/charts/
 [gh-ci-url]: https://github.com/strg-at/charts/actions/workflows/helm-release.yaml
 [helm-url]: https://helm.sh
 [helm-docu-url]: https://helm.sh/docs/
-[license-shield]: https://img.shields.io/github/license/strg-at/charts?color=brightgreen&label=%F0%9F%93%83%20license&style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/strg-at/charts?color=brightgreen&label=%E2%9A%96%EF%B8%8F%20license&style=for-the-badge
 [license-url]: https://github.com/strg-at/charts/blob/main/LICENSE
