@@ -1,0 +1,67 @@
+---
+fail_fast: false
+
+default_stages:
+  - commit
+  - push
+
+repos:
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.26.3
+    hooks:
+      - id: yamllint
+        args:
+          - -c
+          - .config/.yamllint-config.yaml
+
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.11
+    hooks:
+      - id: remove-crlf
+      - id: remove-tabs
+
+  - repo: https://github.com/sirosen/fix-smartquotes
+    rev: 0.2.0
+    hooks:
+      - id: fix-smartquotes
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args:
+          - --maxkb=200
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-symlinks
+      - id: check-xml
+      - id: detect-aws-credentials
+        args:
+          - --allow-missing-credentials
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+        args:
+          - --fix=auto
+      - id: trailing-whitespace
+        args:
+          - --markdown-linebreak-ext=md
+
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.31.0
+    hooks:
+      - id: markdownlint-fix
+        args:
+          - --config
+          - .config/.markdownlint-config.yaml
+
+  - repo: https://github.com/norwoodj/helm-docs
+    rev: v1.6.0
+    hooks:
+      - id: helm-docs
+        args:
+          - --chart-search-root=charts

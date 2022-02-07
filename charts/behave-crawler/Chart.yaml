@@ -11,9 +11,9 @@ keywords:
   - strg
 home: https://github.com/strg-at/charts/tree/main/behave-crawler
 maintainers:
-- name: Nils Müller
-  email: nils.mueller@strg.at
+  - name: Nils Müller
+    email: nils.mueller@strg.at
 dependencies:
-- name: common
-  repository: https://library-charts.k8s-at-home.com
-  version: 4.3.0
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.3.0
