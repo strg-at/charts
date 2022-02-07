@@ -7,8 +7,6 @@
 [![renovate][renovate-shield]][renovate-dashboard-url]
 <!-- [![license][license-shield]][license-url] -->
 
-<br />
-
 # STRG. helm charts
 
 A collection of charts we use in our projects.
