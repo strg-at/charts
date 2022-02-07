@@ -1,14 +1,14 @@
 apiVersion: v2
 type: application
 appVersion: 1.0.14
-description: STRG.BeHave collaborative-filtering
-name: behave-collaborative-filtering
+description: STRG.BeHave collaborative-filtering-service
+name: behave-collaborative-filtering-service
 version: 0.1.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
   - collaborative-filtering
-home: https://github.com/strg-at/tree/main/charts/behave-collaborative-filtering
+home: https://github.com/strg-at/tree/main/charts/behave-collaborative-filtering-service
 maintainers:
   - name: Nils Müller
     email: nils.mueller@strg.at

@@ -1,10 +1,10 @@
-# behave-collaborative-filtering
+# behave-collaborative-filtering-service
 
 ![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.14](https://img.shields.io/badge/AppVersion-1.0.14-informational?style=flat-square)
 
-STRG.BeHave collaborative-filtering
+STRG.BeHave collaborative-filtering-service
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-collaborative-filtering>
+**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-collaborative-filtering-service>
 
 ## Maintainers
 
