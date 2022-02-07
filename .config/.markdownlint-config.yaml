@@ -24,3 +24,5 @@ MD013:
 
 # MD013/no-inline-html - Inline HTML disabled because of helm-docs
 MD033: false
+# MD034/no-bare-urls - disabled because of helm-docs
+MD034: false

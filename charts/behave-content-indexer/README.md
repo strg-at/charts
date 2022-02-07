@@ -1,10 +1,10 @@
-# behave-crawler
+# behave-content-indexer
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.4.4](https://img.shields.io/badge/AppVersion-1.4.4-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.5.5](https://img.shields.io/badge/AppVersion-2.5.5-informational?style=flat-square)
 
-STRG.BeHave crawler
+STRG.BeHave content-indexer Helm chart for Kubernetes
 
-**Homepage:** <https://github.com/strg-at/charts/tree/main/behave-crawler>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/behave-content-indexer>
 
 ## Maintainers
 
@@ -25,19 +25,17 @@ Kubernetes: `>=1.16.0-0`
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
-| env.BEHAVE_CLIENT_ID | string | `"strg"` | beHave client id used as logging reference aswel as for NATS message routing |
+| env.API | string | `"nats"` | content-indexer api to use |
+| env.BEHAVE_CLIENT_ID | string | `"strg"` | beHave client id used in logging reference aswel as in NATS message routing |
+| env.ELASTIC_HOST | string | `""` | elasticsearch host ip or fqdn |
+| env.ELASTIC_PORT | string | `"9200"` | elasticsearch port defaults to 9200 |
 | env.NATS_PASS | string | `""` | the nats password |
 | env.NATS_SERVER | string | `""` | the nats server address |
 | env.NATS_USER | string | `""` | the nats user |
-| env.NODE_ENV | string | `"production"` | The default node environment |
-| env.NODE_LOG_LEVEL | string | `"info"` | The node log level |
-| env.PGDATABASE | string | `""` | The postgres database name |
-| env.PGHOST | string | `""` | The postgres host ip or FQDN |
-| env.PGMAXCON | string | `"1"` | The postgres number of connections |
-| env.PGPORT | string | `"5432"` | The postgres port to connect default to 5432 |
-| env.PORT | string | `"3000"` | The node application port |
+| env.PYTHON_ENV | string | `"production"` | The default python environment |
 | env.TZ | string | `"Europe/Vienna"` | The timezone in the container |
-| image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/crawler"` | image repository |
+| env.USE_NOEN_PARSER | string | `"false"` | use the noen parser or not |
+| image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/content-indexer"` | image repository |
 | image.tag | string | `""` | image tag |
 | securityContext.allowPrivilegeEscalation | bool | `false` | do not allow privilege escalation for security reasons |
 | securityContext.capabilities.drop[0] | string | `"ALL"` | drop all privileges as we dont need them |
