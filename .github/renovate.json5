@@ -1,0 +1,34 @@
+{
+  "enabled": true,
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "🤖 Renovate Dashboard",
+  "suppressNotifications": ["prIgnoreNotification"],
+  "rebaseWhen": "conflicted",
+  "helmv3": {
+    "fileMatch": ["charts/.+/Chart\\.yaml$"]
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["helm"],
+      "commitMessageTopic": "Helm chart {{depName}}",
+      "separateMinorPatch": true
+    },
+    {
+      "commitMessagePrefix": "[{{{parentDir}}}]",
+      "branchTopic": "{{{parentDir}}}-{{{depNameSanitized}}}-{{{newMajor}}}{{#if isPatch}}.{{{newMinor}}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
+      "updateTypes": ["major"],
+      "bumpVersion": "major",
+      "labels": ["major"],
+    },
+    {
+      "updateTypes": ["minor"],
+      "bumpVersion": "minor",
+      "labels": ["minor"],
+    },
+    {
+      "updateTypes": ["patch"],
+      "bumpVersion": "patch",
+      "labels": ["patch"],
+    },
+  ]
+}
