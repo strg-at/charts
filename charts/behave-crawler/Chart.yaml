@@ -3,7 +3,7 @@ type: application
 appVersion: 1.4.4
 description: STRG.BeHave crawler
 name: behave-crawler
-version: 0.1.0
+version: 0.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
