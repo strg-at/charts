@@ -136,4 +136,27 @@ entries:
     urls:
     - https://github.com/strg-at/charts/releases/download/behave-engagement-service-0.1.2/behave-engagement-service-0.1.2.tgz
     version: 0.1.2
-generated: "2022-02-07T21:00:06.613679215Z"
+  behave-tracking-service:
+  - apiVersion: v2
+    appVersion: 5.0.12
+    created: "2022-02-07T21:27:16.116529751Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave tracking-service
+    digest: aa157372a7d74490ae101d869a5e039c0447aecbf81a0c83f27c57b8b1ba6e41
+    home: https://github.com/strg-at/tree/main/charts/behave-tracking-service
+    keywords:
+    - behave
+    - tracking-service
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-tracking-service
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-tracking-service-0.1.2/behave-tracking-service-0.1.2.tgz
+    version: 0.1.2
+generated: "2022-02-07T21:27:16.116550951Z"
