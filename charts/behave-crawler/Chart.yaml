@@ -1,0 +1,18 @@
+apiVersion: v2
+type: application
+appVersion: 1.4.4
+description: STRG.BeHave crawler
+name: behave-crawler
+version: 0.1.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - behave
+  - crawler
+home: https://github.com/strg-at/charts/tree/main/behave-crawler
+maintainers:
+- name: Nils Müller
+  email: nils.mueller@strg.at
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
