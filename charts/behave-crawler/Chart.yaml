@@ -8,6 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
   - crawler
+  - strg
 home: https://github.com/strg-at/charts/tree/main/behave-crawler
 maintainers:
 - name: Nils Müller
