@@ -3,12 +3,12 @@ type: application
 appVersion: 1.4.4
 description: STRG.BeHave crawler
 name: behave-crawler
-version: 0.1.1
+version: 0.1.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
   - crawler
-home: https://github.com/strg-at/charts/tree/main/behave-crawler
+home: https://github.com/strg-at/tree/main/charts/behave-crawler
 maintainers:
   - name: Nils Müller
     email: nils.mueller@strg.at
