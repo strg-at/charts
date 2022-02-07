@@ -1,0 +1,18 @@
+apiVersion: v2
+type: application
+appVersion: 1.1.3
+description: STRG.BeHave recommendation-api
+name: behave-recommendation-api
+version: 0.1.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - behave
+  - recommendation-api
+home: https://github.com/strg-at/tree/main/charts/behave-recommendation-api
+maintainers:
+  - name: Nils Müller
+    email: nils.mueller@strg.at
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.3.0

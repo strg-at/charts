@@ -1,0 +1,86 @@
+# Default values for behave-recommendation-api
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+controller:
+  # -- Number of desired pods.
+  # We use 3 minimum to assure no outage durring rollout/preemtible node restarts
+  replicas: 3
+
+image:
+  # -- image repository
+  repository: eu.gcr.io/logical-sled-220910/strg/behave/recommendation-api
+  # -- image tag
+  tag: ""
+  # -- image pull policy
+  # pullPolicy: IfNotPresent
+
+securityContext:
+  capabilities:
+    drop:
+      # -- drop all privileges as we dont need them
+      - ALL
+  # -- set root fs to read only for security reasons
+  readOnlyRootFilesystem: true
+  # -- do not allow privilege escalation for security reasons
+  allowPrivilegeEscalation: false
+  # -- do not run as root for security reasons
+  runAsNonRoot: true
+  # -- run as user with <id>
+  runAsUser: 1000
+
+env:
+  # -- The timezone in the container
+  TZ: Europe/Vienna
+  # -- The application identifier
+  APP: recommendation-api
+  # -- The application port
+  PORT: "3000"
+  # -- The default node environment
+  NODE_ENV: "production"
+  # -- The default route to listen for requests
+  ROUTE: "/api/recommendation"
+  # -- beHave client id used in logging reference aswel as in NATS message routing
+  BEHAVE_CLIENT_ID: strg
+  # -- The configured content pools, order matters
+  CONTENT_POOLS: '["most-engaged"]'
+  # -- The postgres database name
+  PGDATABASE: ""
+  # -- The postgres host ip or FQDN
+  PGHOST: ""
+  # -- The postgres port to connect default to 5432
+  PGPORT: "5432"
+  # -- The postgres number of connections
+  PGMAXCON:
+    "5"
+    # -- The postgres replica host ip or FQDN
+  PGHOST_REPLICA: ""
+  # -- The postgres replica port to connect default to 5432
+  PGPORT_REPLICA: "5432"
+  # -- The postgres replica number of connections
+  PGMAXCON_REPLICA: "5"
+  # -- The redis ip or FQDN
+  REDIS_HOST: ""
+  # -- The redis port default to 6379
+  REDIS_PORT: "6379"
+  # -- The deployment mode can either be `api` or `train-loop``
+  MODE: "api"
+  # -- Openblas config - the number of threads to use
+  OPENBLAS_NUM_THREADS: "1"
+  # -- the nats server address
+  NATS_SERVER: ""
+  # -- the nats user
+  NATS_USER: ""
+  # -- the nats password
+  NATS_PASS: ""
+
+service:
+  main:
+    ports:
+      port: 3000
