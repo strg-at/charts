@@ -40,8 +40,8 @@ Kubernetes: `>=1.16.0-0`
 | ingress.annotations | object | `{}` | Provide additional annotations which may be required. |
 | ingress.enabled | bool | `true` | Enables or disables the ingress |
 | ingress.hosts[0].host | string | `"behave.example.com"` | Host address. Helm template can be passed. |
-| ingress.hosts[0].paths[0].path | string | `"/"` | Path.  Helm template can be passed. |
-| ingress.hosts[0].paths[0].pathType | string | `"Prefix"` | Ignored if not kubeVersion >= 1.14-0 |
+| ingress.hosts[0].paths[0].path | string | `"/"` | Path. Helm template can be passed. |
+| ingress.hosts[0].paths[0].pathType | string | `"Prefix"` | PathType. |
 | ingress.hosts[0].paths[0].service.name | string | `nil` | Overrides the service name reference for this path |
 | ingress.hosts[0].paths[0].service.port | string | `nil` | Overrides the service port reference for this path |
 | ingress.ingressClassName | string | `nil` | Set the ingressClass that is used for this ingress. |
