@@ -66,3 +66,19 @@ env:
   NATS_USER: ""
   # -- the nats password
   NATS_PASS: ""
+
+# disable probes as we dont have a tcp or udp port open currently
+probes:
+  liveness:
+    enabled: false
+
+  readiness:
+    enabled: false
+
+  startup:
+    enabled: false
+
+# disable service as we dont have a tcp or udp port open currently
+service:
+  main:
+    enabled: false
