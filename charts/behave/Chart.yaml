@@ -3,7 +3,7 @@ type: application
 appVersion: 0.1.0
 description: STRG.BeHave composition chart
 name: behave
-version: 0.1.1
+version: 0.1.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
