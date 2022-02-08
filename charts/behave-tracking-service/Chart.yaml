@@ -3,7 +3,7 @@ type: application
 appVersion: 5.0.12
 description: STRG.BeHave tracking-service
 name: behave-tracking-service
-version: 0.1.3
+version: 0.1.4
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave

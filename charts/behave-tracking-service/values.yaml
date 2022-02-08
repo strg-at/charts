@@ -35,18 +35,11 @@ securityContext:
   # -- run as user with <id>
   runAsUser: 1000
 
-service:
-  main:
-    ports:
-      http:
-        # -- the service port
-        port: 3000
-
 env:
   # -- The timezone in the container
-  TZ: Europe/Vienna
+  TZ: UTC
   # -- The default nodejs environment
-  NODE_ENV: "production"
+  NODE_ENV: production
   # -- beHave client id used in logging reference aswel as in NATS message routing
   BEHAVE_CLIENT_ID: strg
   # -- beHave websocket connection timeout
@@ -65,3 +58,38 @@ env:
   NATS_USER: ""
   # -- the nats password
   NATS_PASS: ""
+
+# -- Probe configuration
+# -- [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+# @default -- See below
+probes:
+  # -- Liveness probe configuration
+  # @default -- See below
+  liveness:
+    # -- Enable the liveness probe
+    enabled: false
+
+  # -- Redainess probe configuration
+  # @default -- See below
+  readiness:
+    # -- Enable the readiness probe
+    enabled: false
+
+  # -- Startup probe configuration
+  # @default -- See below
+  startup:
+    # -- Enable the startup probe
+    enabled: false
+
+# -- Configure the services for the chart here.
+# Additional services can be added by adding a dictionary key similar to the 'main' service.
+# @default -- See below
+service:
+  main:
+    # -- Configure the Service port information here.
+    # Additional ports can be added by adding a dictionary key similar to the 'http' service.
+    # @default -- See below
+    ports:
+      http:
+        # -- The port number
+        port: 3000
