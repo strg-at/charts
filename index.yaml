@@ -3,6 +3,28 @@ entries:
   behave-blacklist-ui:
   - apiVersion: v2
     appVersion: 1.1.0
+    created: "2022-02-08T09:57:51.669780547Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave blacklist-ui
+    digest: d2f4659bf0f37027826cd021e52f8eb3b3443c973d5ab8d12c38fbab0f611f85
+    home: https://github.com/strg-at/tree/main/charts/behave-blacklist-ui
+    keywords:
+    - behave
+    - blacklist-ui
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-blacklist-ui
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-blacklist-ui-0.1.4/behave-blacklist-ui-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.1.0
     created: "2022-02-07T22:05:51.922380419Z"
     dependencies:
     - name: common
@@ -337,4 +359,4 @@ entries:
     urls:
     - https://github.com/strg-at/charts/releases/download/behave-tracking-service-0.1.2/behave-tracking-service-0.1.2.tgz
     version: 0.1.2
-generated: "2022-02-07T22:11:02.894114913Z"
+generated: "2022-02-08T09:57:51.670000154Z"
