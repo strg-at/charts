@@ -159,6 +159,28 @@ entries:
   behave-content-indexer:
   - apiVersion: v2
     appVersion: 2.5.5
+    created: "2022-02-08T10:51:05.765271254Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave content-indexer Helm chart for Kubernetes
+    digest: 5f8c68913be6dd9cc2cb8ebe32d577b5b68787d15d30e2325150632a216ab058
+    home: https://github.com/strg-at/tree/main/charts/behave-content-indexer
+    keywords:
+    - behave
+    - content-indexer
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-content-indexer
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-content-indexer-0.1.4/behave-content-indexer-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 2.5.5
     created: "2022-02-07T22:05:52.274609384Z"
     dependencies:
     - name: common
@@ -403,4 +425,4 @@ entries:
     urls:
     - https://github.com/strg-at/charts/releases/download/behave-tracking-service-0.1.2/behave-tracking-service-0.1.2.tgz
     version: 0.1.2
-generated: "2022-02-08T10:45:31.850514792Z"
+generated: "2022-02-08T10:51:05.76538676Z"
