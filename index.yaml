@@ -382,6 +382,28 @@ entries:
   behave-recommendation-api:
   - apiVersion: v2
     appVersion: 1.1.3
+    created: "2022-02-08T11:14:09.448477448Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave recommendation-api
+    digest: 7d24ac3c5f6717bfda35c3d21583e56a175d85549901472eb37fceb604eb0a5a
+    home: https://github.com/strg-at/tree/main/charts/behave-recommendation-api
+    keywords:
+    - behave
+    - recommendation-api
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-recommendation-api
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-recommendation-api-0.1.4/behave-recommendation-api-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.1.3
     created: "2022-02-07T22:05:52.7766185Z"
     dependencies:
     - name: common
@@ -469,4 +491,4 @@ entries:
     urls:
     - https://github.com/strg-at/charts/releases/download/behave-tracking-service-0.1.2/behave-tracking-service-0.1.2.tgz
     version: 0.1.2
-generated: "2022-02-08T11:05:05.967567893Z"
+generated: "2022-02-08T11:14:09.44867465Z"
