@@ -1,6 +1,6 @@
 # behave
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
 
 STRG.BeHave composition chart
 
@@ -32,11 +32,11 @@ Kubernetes: `>=1.16.0-0`
 |-----|------|---------|-------------|
 | behave-blacklist-ui.enabled | bool | `false` | Enable the behave-blacklist-ui subchart |
 | behave-collaborative-filtering-service.enabled | bool | `false` | Enable the behave-collaborative-filtering-service subchart |
-| behave-content-indexer.enabled | bool | `false` | Enable the behave-content-indexer subchart enabled: true |
-| behave-crawler.enabled | bool | `false` | Enable the behave-crawler subchart enabled: true |
-| behave-engagement-service.enabled | bool | `false` | Enable the behave-engagement-service subchart enabled: true |
-| behave-recommendation-api.enabled | bool | `false` | Enable the behave-recommendation-api subchart enabled: true |
-| behave-tracking-service.enabled | bool | `true` | Enable the behave-tracking-service subchart enabled: true |
+| behave-content-indexer.enabled | bool | `true` | Enable the behave-content-indexer subchart |
+| behave-crawler.enabled | bool | `true` | Enable the behave-crawler subchart |
+| behave-engagement-service.enabled | bool | `true` | Enable the behave-engagement-service subchart |
+| behave-recommendation-api.enabled | bool | `true` | Enable the behave-recommendation-api subchart |
+| behave-tracking-service.enabled | bool | `true` | Enable the behave-tracking-service subchart |
 | ingress.annotations | object | `{}` | Provide additional annotations which may be required. |
 | ingress.enabled | bool | `true` | Enables or disables the ingress |
 | ingress.hosts[0].host | string | `"behave.example.com"` | Host address. Helm template can be passed. |

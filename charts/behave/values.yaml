@@ -41,25 +41,20 @@ behave-collaborative-filtering-service:
 
 behave-content-indexer:
   # -- Enable the behave-content-indexer subchart
-  # enabled: true
-  enabled: false
+  enabled: true
 
 behave-crawler:
   # -- Enable the behave-crawler subchart
-  # enabled: true
-  enabled: false
+  enabled: true
 
 behave-engagement-service:
   # -- Enable the behave-engagement-service subchart
-  # enabled: true
-  enabled: false
+  enabled: true
 
 behave-recommendation-api:
   # -- Enable the behave-recommendation-api subchart
-  # enabled: true
-  enabled: false
+  enabled: true
 
 behave-tracking-service:
   # -- Enable the behave-tracking-service subchart
-  # enabled: true
   enabled: true
