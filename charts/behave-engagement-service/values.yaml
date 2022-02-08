@@ -37,13 +37,13 @@ securityContext:
 
 env:
   # -- The timezone in the container
-  TZ: Europe/Vienna
+  TZ: UTC
   # -- The application identifier
   APP: engagement-service
   # -- The application port
   PORT: "3000"
   # -- The default node environment
-  NODE_ENV: "production"
+  NODE_ENV: production
   # -- beHave client id used in logging reference aswel as in NATS message routing
   BEHAVE_CLIENT_ID: strg
   # -- The number of results to return
@@ -55,8 +55,7 @@ env:
   # -- The postgres port to connect default to 5432
   PGPORT: "5432"
   # -- The postgres number of connections
-  PGMAXCON:
-    "5"
+  PGMAXCON: "5"
     # -- The postgres replica host ip or FQDN
   PGHOST_REPLICA: ""
   # -- The postgres replica port to connect default to 5432
@@ -68,7 +67,7 @@ env:
   # -- The redis port default to 6379
   REDIS_PORT: "6379"
   # -- The deployment mode can either be `api` or `train-loop``
-  MODE: "api"
+  MODE: api
   # -- Openblas config - the number of threads to use
   OPENBLAS_NUM_THREADS: "1"
   # -- the nats server address
@@ -77,3 +76,33 @@ env:
   NATS_USER: ""
   # -- the nats password
   NATS_PASS: ""
+
+# -- Probe configuration
+# -- [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+# @default -- See below
+probes:
+  # -- Liveness probe configuration
+  # @default -- See below
+  liveness:
+    # -- Disable the liveness probe as we dont have a tcp or udp port open currently
+    enabled: false
+
+  # -- Redainess probe configuration
+  # @default -- See below
+  readiness:
+    # -- Disable the readiness probe as we dont have a tcp or udp port open currently
+    enabled: false
+
+  # -- Startup probe configuration
+  # @default -- See below
+  startup:
+    # -- Disable the startup probe as we dont have a tcp or udp port open currently
+    enabled: false
+
+# -- Configure the services for the chart here.
+# Additional services can be added by adding a dictionary key similar to the 'main' service.
+# @default -- See below
+service:
+  main:
+    # -- Disable service as we dont have a tcp or udp port open currently
+    enabled: false
