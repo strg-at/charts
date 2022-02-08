@@ -35,13 +35,13 @@ securityContext:
 
 env:
   # -- The timezone in the container
-  TZ: Europe/Vienna
+  TZ: UTC
   # -- The default node environment
-  NODE_ENV: "production"
+  NODE_ENV: production
   # -- The node log level
   NODE_LOG_LEVEL: info
   # -- beHave client id used as logging reference aswel as for NATS message routing
-  BEHAVE_CLIENT_ID: "strg"
+  BEHAVE_CLIENT_ID: strg
   # -- The node application port
   PORT: "3000"
   # -- The postgres database name
@@ -58,3 +58,19 @@ env:
   NATS_USER: ""
   # -- the nats password
   NATS_PASS: ""
+
+  # disable probes as we dont have a tcp or udp port open currently
+probes:
+  liveness:
+    enabled: false
+
+  readiness:
+    enabled: false
+
+  startup:
+    enabled: false
+
+# disable service as we dont have a tcp or udp port open currently
+service:
+  main:
+    enabled: false
