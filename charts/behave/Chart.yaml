@@ -1,0 +1,42 @@
+apiVersion: v2
+type: application
+appVersion: 0.1.0
+description: STRG.BeHave composition chart
+name: behave
+version: 0.1.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - behave
+home: https://github.com/strg-at/tree/main/charts/behave
+maintainers:
+  - name: Nils Müller
+    email: nils.mueller@strg.at
+dependencies:
+  - name: behave-blacklist-ui
+    repository: https://strg-at.github.io/charts/
+    condition: behave-blacklist-ui.enabled
+    version: 0.1.4
+  - name: behave-collaborative-filtering-service
+    repository: https://strg-at.github.io/charts/
+    condition: behave-collaborative-filtering-service.enabled
+    version: 0.1.5
+  - name: behave-content-indexer
+    repository: https://strg-at.github.io/charts/
+    condition: behave-content-indexer.enabled
+    version: 0.1.4
+  - name: behave-crawler
+    repository: https://strg-at.github.io/charts/
+    condition: behave-crawler.enabled
+    version: 0.1.5
+  - name: behave-engagement-service
+    repository: https://strg-at.github.io/charts/
+    condition: behave-engagement-service.enabled
+    version: 0.1.4
+  - name: behave-recommendation-api
+    repository: https://strg-at.github.io/charts/
+    condition: behave-recommendation-api.enabled
+    version: 0.1.4
+  - name: behave-tracking-service
+    repository: https://strg-at.github.io/charts/
+    condition: behave-tracking-service.enabled
+    version: 0.1.4

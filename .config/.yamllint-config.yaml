@@ -1,5 +1,7 @@
 ---
 # see https://yamllint.readthedocs.io/en/stable/index.html for more options
+ignore: |
+  **/templates/*
 extends: default
 rules:
   truthy:

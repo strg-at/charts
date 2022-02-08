@@ -1,0 +1,68 @@
+{{- if .Values.ingress.enabled }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: behave
+  labels:
+    {{- with .Values.ingress.labels }}
+       {{- toYaml . | nindent 4 }}
+    {{- end }}
+  {{- with .Values.ingress.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  ingressClassName: {{ .Values.ingress.ingressClassName }}
+  {{- if .Values.ingress.tls }}
+  tls:
+    {{- range .Values.ingress.tls }}
+    - hosts:
+        {{- range .hosts }}
+        - {{ tpl . $ | quote }}
+        {{- end }}
+      {{- if .secretName }}
+      secretName: {{ tpl .secretName $ | quote}}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+  rules:
+  {{- range.Values.ingress.hosts }}
+    - host: {{ tpl .host $ | quote }}
+      http:
+        paths:
+          {{- range .paths }}
+          - path: {{ tpl .path $ | quote }}
+            pathType: {{ default "Prefix" .pathType }}
+            backend:
+              service:
+                name: {{ .service.name }}
+                port:
+                  number: {{ .service.port }}
+          {{- end }}
+  {{- end }}
+  {{- if index .Values "behave-tracking-service" "enabled" }}
+    - http:
+        paths:
+          - path: /ws/event
+          backend:
+            serviceName: behave-behave-tracking-service
+            servicePort: {{ index .Values "behave-tracking-service" "service" "main" "ports" "http" "port"}}
+  {{- end }}
+  {{- if index .Values "behave-recommendation-api" "enabled" }}
+    - http:
+        paths:
+          - path: /api/recommendation
+          backend:
+            serviceName: behave-behave-recommendation-api
+            servicePort: {{ index .Values "behave-recommendation-api" "service" "main" "ports" "http" "port"}}
+  {{- end }}
+  {{- if index .Values "behave-blacklist-ui" "enabled" }}
+    - http:
+        paths:
+          - path: /blacklist/*
+            backend:
+              serviceName: behave-behave-blacklist-ui
+              servicePort: {{ index .Values "behave-blacklist-ui" "service" "main" "ports" "http" "port"}}
+  {{- end }}
+{{- end }}
