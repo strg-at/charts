@@ -1,0 +1,60 @@
+# Default values for behave.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+ingress:
+  # -- Enables or disables the ingress
+  enabled: true
+
+  # -- Provide additional annotations which may be required.
+  annotations: {}
+
+  # -- Provide additional labels which may be required.
+  labels: {}
+
+  # -- Set the ingressClass that is used for this ingress.
+  ingressClassName:  # "nginx"
+
+  ## Configure the hosts for the ingress
+  hosts:
+    - # -- Host address. Helm template can be passed.
+      host: behave.example.com
+      ## Configure the paths for the host
+      paths:
+        - # -- Path. Helm template can be passed.
+          path: /
+          # -- PathType.
+          pathType: Prefix
+          service:
+            # -- Overrides the service name reference for this path
+            name:
+            # -- Overrides the service port reference for this path
+            port:
+
+behave-blacklist-ui:
+  # -- Enable the behave-blacklist-ui subchart
+  enabled: false
+
+behave-collaborative-filtering-service:
+  # -- Enable the behave-collaborative-filtering-service subchart
+  enabled: false
+
+behave-content-indexer:
+  # -- Enable the behave-content-indexer subchart
+  enabled: true
+
+behave-crawler:
+  # -- Enable the behave-crawler subchart
+  enabled: true
+
+behave-engagement-service:
+  # -- Enable the behave-engagement-service subchart
+  enabled: true
+
+behave-recommendation-api:
+  # -- Enable the behave-recommendation-api subchart
+  enabled: true
+
+behave-tracking-service:
+  # -- Enable the behave-tracking-service subchart
+  enabled: true
