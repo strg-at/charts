@@ -45,7 +45,7 @@ spec:
     - http:
         paths:
           - path: /ws/event
-          backend:
+            backend:
             serviceName: behave-behave-tracking-service
             servicePort: {{ index .Values "behave-tracking-service" "service" "main" "ports" "http" "port"}}
   {{- end }}
@@ -53,7 +53,7 @@ spec:
     - http:
         paths:
           - path: /api/recommendation
-          backend:
+            backend:
             serviceName: behave-behave-recommendation-api
             servicePort: {{ index .Values "behave-recommendation-api" "service" "main" "ports" "http" "port"}}
   {{- end }}
