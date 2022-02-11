@@ -1,6 +1,6 @@
 # behave
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
 
 STRG.BeHave composition chart
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://strg-at.github.io/charts/ | behave-blacklist-ui | 0.1.4 |
+| https://strg-at.github.io/charts/ | behave-blacklist-ui | 0.1.5 |
 | https://strg-at.github.io/charts/ | behave-collaborative-filtering-service | 0.1.5 |
 | https://strg-at.github.io/charts/ | behave-content-indexer | 0.1.4 |
 | https://strg-at.github.io/charts/ | behave-crawler | 0.1.5 |
