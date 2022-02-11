@@ -3,7 +3,7 @@ type: application
 appVersion: 1.1.0
 description: STRG.BeHave blacklist-ui
 name: behave-blacklist-ui
-version: 0.1.4
+version: 0.1.5
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave

@@ -1,6 +1,6 @@
 # behave-blacklist-ui
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.1.0](https://img.shields.io/badge/AppVersion-1.1.0-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.1.0](https://img.shields.io/badge/AppVersion-1.1.0-informational?style=flat-square)
 
 STRG.BeHave blacklist-ui
 
@@ -33,7 +33,7 @@ Kubernetes: `>=1.16.0-0`
 | env.NATS_USER | string | `""` | the nats user |
 | env.NODE_ENV | string | `"production"` | The default node environment |
 | env.PORT | string | `"8888"` | The application port |
-| env.TZ | string | `"Europe/Vienna"` | The timezone in the container |
+| env.TZ | string | `"UTC"` | The timezone in the container |
 | image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/blacklist-ui"` | image repository |
 | image.tag | string | `""` | image tag |
 | securityContext.allowPrivilegeEscalation | bool | `false` | do not allow privilege escalation for security reasons |

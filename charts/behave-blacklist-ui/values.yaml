@@ -37,7 +37,7 @@ securityContext:
 
 env:
   # -- The timezone in the container
-  TZ: Europe/Vienna
+  TZ: UTC
   # -- The application port
   PORT: "8888"
   # -- The default node environment
