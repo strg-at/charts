@@ -1,0 +1,18 @@
+apiVersion: v2
+type: application
+appVersion: 1.0.0
+description: STRG.BeHave agents-graphql-service
+name: agents-graphql-service
+version: 0.1.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - agents
+  - nuxt-service
+home: https://github.com/strg-at/tree/main/charts/agents-graphql-service
+maintainers:
+  - name: Dominic Jurkic
+    email: dominic.jurkic@strg.at
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.3.0
