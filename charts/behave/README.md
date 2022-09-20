@@ -18,13 +18,13 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://strg-at.github.io/charts/ | behave-blacklist-ui | 0.1.6 |
-| https://strg-at.github.io/charts/ | behave-collaborative-filtering-service | 0.1.6 |
-| https://strg-at.github.io/charts/ | behave-content-indexer | 0.1.5 |
-| https://strg-at.github.io/charts/ | behave-crawler | 0.1.6 |
-| https://strg-at.github.io/charts/ | behave-engagement-service | 0.1.5 |
-| https://strg-at.github.io/charts/ | behave-recommendation-api | 0.1.5 |
-| https://strg-at.github.io/charts/ | behave-tracking-service | 0.1.5 |
+| https://strg-at.github.io/charts/ | behave-blacklist-ui | 0.1.5 |
+| https://strg-at.github.io/charts/ | behave-collaborative-filtering-service | 0.1.5 |
+| https://strg-at.github.io/charts/ | behave-content-indexer | 0.1.4 |
+| https://strg-at.github.io/charts/ | behave-crawler | 0.1.5 |
+| https://strg-at.github.io/charts/ | behave-engagement-service | 0.1.4 |
+| https://strg-at.github.io/charts/ | behave-recommendation-api | 0.1.4 |
+| https://strg-at.github.io/charts/ | behave-tracking-service | 0.1.4 |
 
 ## Values
 
