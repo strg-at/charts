@@ -3,6 +3,52 @@ entries:
   behave:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-09-20T21:27:13.580284413Z"
+    dependencies:
+    - condition: behave-blacklist-ui.enabled
+      name: behave-blacklist-ui
+      repository: https://strg-at.github.io/charts/
+      version: 0.1.5
+    - condition: behave-collaborative-filtering-service.enabled
+      name: behave-collaborative-filtering-service
+      repository: https://strg-at.github.io/charts/
+      version: 0.1.5
+    - condition: behave-content-indexer.enabled
+      name: behave-content-indexer
+      repository: https://strg-at.github.io/charts/
+      version: 0.1.4
+    - condition: behave-crawler.enabled
+      name: behave-crawler
+      repository: https://strg-at.github.io/charts/
+      version: 0.1.5
+    - condition: behave-engagement-service.enabled
+      name: behave-engagement-service
+      repository: https://strg-at.github.io/charts/
+      version: 0.1.4
+    - condition: behave-recommendation-api.enabled
+      name: behave-recommendation-api
+      repository: https://strg-at.github.io/charts/
+      version: 0.1.4
+    - condition: behave-tracking-service.enabled
+      name: behave-tracking-service
+      repository: https://strg-at.github.io/charts/
+      version: 0.1.4
+    description: STRG.BeHave composition chart
+    digest: b0c7caa054241eb104d6be154296beb71f4eba30315ebcd301352dae45705e21
+    home: https://github.com/strg-at/tree/main/charts/behave
+    keywords:
+    - behave
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-0.1.5/behave-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-02-11T11:26:33.779750304Z"
     dependencies:
     - condition: behave-blacklist-ui.enabled
@@ -188,6 +234,28 @@ entries:
   behave-blacklist-ui:
   - apiVersion: v2
     appVersion: 1.1.0
+    created: "2022-09-20T21:27:13.723948837Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave blacklist-ui
+    digest: 2f6480b8e2b8101bc2ed8e1268592d0d449ca5b3a8e26327fddac2dc7b949120
+    home: https://github.com/strg-at/tree/main/charts/behave-blacklist-ui
+    keywords:
+    - behave
+    - blacklist-ui
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-blacklist-ui
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-blacklist-ui-0.1.6/behave-blacklist-ui-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.1.0
     created: "2022-02-11T09:40:16.772150691Z"
     dependencies:
     - name: common
@@ -275,6 +343,28 @@ entries:
     - https://github.com/strg-at/charts/releases/download/behave-blacklist-ui-0.1.2/behave-blacklist-ui-0.1.2.tgz
     version: 0.1.2
   behave-collaborative-filtering-service:
+  - apiVersion: v2
+    appVersion: 1.0.14
+    created: "2022-09-20T21:27:13.908696125Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave collaborative-filtering-service
+    digest: 7fa8154d3920dd58f8f7bd879223fc206f891ecad8b8049357cc98990b1a0a95
+    home: https://github.com/strg-at/tree/main/charts/behave-collaborative-filtering-service
+    keywords:
+    - behave
+    - collaborative-filtering
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-collaborative-filtering-service
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-collaborative-filtering-service-0.1.6/behave-collaborative-filtering-service-0.1.6.tgz
+    version: 0.1.6
   - apiVersion: v2
     appVersion: 1.0.14
     created: "2022-02-08T10:45:31.850487792Z"
@@ -366,6 +456,28 @@ entries:
   behave-content-indexer:
   - apiVersion: v2
     appVersion: 2.5.5
+    created: "2022-09-20T21:27:14.069954119Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave content-indexer Helm chart for Kubernetes
+    digest: ae574c2643fb76fd5752fbc949d9d8443b42e3e7811eceaaee7605c22305d46d
+    home: https://github.com/strg-at/tree/main/charts/behave-content-indexer
+    keywords:
+    - behave
+    - content-indexer
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-content-indexer
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-content-indexer-0.1.5/behave-content-indexer-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 2.5.5
     created: "2022-02-08T10:51:05.765271254Z"
     dependencies:
     - name: common
@@ -431,6 +543,28 @@ entries:
     - https://github.com/strg-at/charts/releases/download/behave-content-indexer-0.1.2/behave-content-indexer-0.1.2.tgz
     version: 0.1.2
   behave-crawler:
+  - apiVersion: v2
+    appVersion: 1.4.4
+    created: "2022-09-20T21:27:14.207121906Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave crawler
+    digest: 395c23dee285bcbb25eb97a8f4c6cf95a0fb15c0d5fbd2eb820ecd135bbfe825
+    home: https://github.com/strg-at/tree/main/charts/behave-crawler
+    keywords:
+    - behave
+    - crawler
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-crawler
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-crawler-0.1.6/behave-crawler-0.1.6.tgz
+    version: 0.1.6
   - apiVersion: v2
     appVersion: 1.4.4
     created: "2022-02-08T10:54:29.936266628Z"
@@ -522,6 +656,28 @@ entries:
   behave-engagement-service:
   - apiVersion: v2
     appVersion: 1.7.0
+    created: "2022-09-20T21:27:14.389700349Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave engagement-service
+    digest: 1118c495cf2a1d08e1fe0e3c46496590cffb5971cae056a80c2ad73a4119e54b
+    home: https://github.com/strg-at/tree/main/charts/behave-engagement-service
+    keywords:
+    - behave
+    - engagement-service
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-engagement-service
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-engagement-service-0.1.5/behave-engagement-service-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.7.0
     created: "2022-02-08T11:05:05.967521493Z"
     dependencies:
     - name: common
@@ -587,6 +743,28 @@ entries:
     - https://github.com/strg-at/charts/releases/download/behave-engagement-service-0.1.2/behave-engagement-service-0.1.2.tgz
     version: 0.1.2
   behave-recommendation-api:
+  - apiVersion: v2
+    appVersion: 1.1.3
+    created: "2022-09-20T21:27:14.524147579Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave recommendation-api
+    digest: bc8fe036e413bd327be65e92419efb4b854333cf55c54328fbf23c0a926210e8
+    home: https://github.com/strg-at/tree/main/charts/behave-recommendation-api
+    keywords:
+    - behave
+    - recommendation-api
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-recommendation-api
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-recommendation-api-0.1.5/behave-recommendation-api-0.1.5.tgz
+    version: 0.1.5
   - apiVersion: v2
     appVersion: 1.1.3
     created: "2022-02-08T11:14:09.448477448Z"
@@ -656,6 +834,28 @@ entries:
   behave-tracking-service:
   - apiVersion: v2
     appVersion: 5.0.12
+    created: "2022-09-20T21:27:14.717990759Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave tracking-service
+    digest: 8fbb11a5a77abe2de5a028787f2f560f8ca5013b9d386ccb627160af0ab53c66
+    home: https://github.com/strg-at/tree/main/charts/behave-tracking-service
+    keywords:
+    - behave
+    - tracking-service
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    name: behave-tracking-service
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-tracking-service-0.1.5/behave-tracking-service-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 5.0.12
     created: "2022-02-08T11:21:52.185784163Z"
     dependencies:
     - name: common
@@ -720,4 +920,4 @@ entries:
     urls:
     - https://github.com/strg-at/charts/releases/download/behave-tracking-service-0.1.2/behave-tracking-service-0.1.2.tgz
     version: 0.1.2
-generated: "2022-02-11T11:26:33.780056308Z"
+generated: "2022-09-20T21:27:14.718214263Z"
