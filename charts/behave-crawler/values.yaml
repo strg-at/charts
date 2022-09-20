@@ -50,14 +50,25 @@ env:
   PGHOST: ""
   # -- The postgres port to connect default to 5432
   PGPORT: "5432"
+  # -- The postrgres user
+  PGUSER: ""
+  # -- The postrgres password
+  PGPASSWORD: ""
   # -- The postgres number of connections
   PGMAXCON: "1"
-  # -- the nats server address
+  # -- The nats server address
   NATS_SERVER: ""
-  # -- the nats user
+  # -- The nats user
   NATS_USER: ""
-  # -- the nats password
+  # -- The nats password
   NATS_PASS: ""
+
+jobs:
+  createDB:
+    # -- The postgres admin user to setup the database - must be set!
+    PGADMINUSER: ""
+    # -- The postgres admin password to setup the database - must be set!
+    PGADMINPASS: ""
 
   # disable probes as we dont have a tcp or udp port open currently
 probes:
