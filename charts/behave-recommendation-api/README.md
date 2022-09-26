@@ -4,13 +4,14 @@
 
 STRG.BeHave recommendation-api
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-recommendation-api>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/behave-recommendation-api>
 
 ## Maintainers
 
 | Name | Email | Url |
 | ---- | ------ | --- |
 | Nils Müller | <nils.mueller@strg.at> |  |
+| Jasmin Müller | <jasmin.mueller@strg.at> |  |
 
 ## Requirements
 
@@ -39,15 +40,17 @@ Kubernetes: `>=1.16.0-0`
 | env.PGHOST_REPLICA | string | `""` | The postgres replica host ip or FQDN |
 | env.PGMAXCON | string | `"5"` | The postgres number of connections |
 | env.PGMAXCON_REPLICA | string | `"5"` | The postgres replica number of connections |
+| env.PGPASSWORD | string | `""` | The postgres password |
 | env.PGPORT | string | `"5432"` | The postgres port to connect default to 5432 |
 | env.PGPORT_REPLICA | string | `"5432"` | The postgres replica port to connect default to 5432 |
+| env.PGUSER | string | `""` | The postgres user |
 | env.PORT | string | `"3000"` | The application port |
-| env.REDIS_HOST | string | `""` | The redis ip or FQDN |
-| env.REDIS_PORT | string | `"6379"` | The redis port default to 6379 |
 | env.ROUTE | string | `"/api/recommendation"` | The default route to listen for requests |
 | env.TZ | string | `"Europe/Vienna"` | The timezone in the container |
 | image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/recommendation-api"` | image repository |
 | image.tag | string | `""` | image tag |
+| jobs.createDB.PGADMINPASS | string | `""` | The postgres admin password to setup the database - must be set! |
+| jobs.createDB.PGADMINUSER | string | `""` | The postgres admin user to setup the database - must be set! |
 | probes | object | See below | [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) |
 | probes.liveness | object | See below | Liveness probe configuration |
 | probes.liveness.enabled | bool | `false` | Enable the liveness probe |

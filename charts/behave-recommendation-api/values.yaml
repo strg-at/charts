@@ -56,19 +56,18 @@ env:
   PGHOST: ""
   # -- The postgres port to connect default to 5432
   PGPORT: "5432"
+  # -- The postgres user
+  PGUSER: ""
+  # -- The postgres password
+  PGPASSWORD: ""
   # -- The postgres number of connections
-  PGMAXCON:
-    "5"
-    # -- The postgres replica host ip or FQDN
+  PGMAXCON: "5"
+  # -- The postgres replica host ip or FQDN
   PGHOST_REPLICA: ""
   # -- The postgres replica port to connect default to 5432
   PGPORT_REPLICA: "5432"
   # -- The postgres replica number of connections
   PGMAXCON_REPLICA: "5"
-  # -- The redis ip or FQDN
-  REDIS_HOST: ""
-  # -- The redis port default to 6379
-  REDIS_PORT: "6379"
   # -- The deployment mode can either be `api` or `train-loop``
   MODE: "api"
   # -- Openblas config - the number of threads to use
@@ -79,6 +78,13 @@ env:
   NATS_USER: ""
   # -- the nats password
   NATS_PASS: ""
+
+jobs:
+  createDB:
+    # -- The postgres admin user to setup the database - must be set!
+    PGADMINUSER: ""
+    # -- The postgres admin password to setup the database - must be set!
+    PGADMINPASS: ""
 
 # -- Probe configuration
 # -- [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
