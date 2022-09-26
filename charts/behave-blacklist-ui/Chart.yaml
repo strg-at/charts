@@ -8,10 +8,12 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
   - blacklist-ui
-home: https://github.com/strg-at/tree/main/charts/behave-blacklist-ui
+home: https://github.com/strg-at/charts/tree/main/charts/behave-blacklist-ui
 maintainers:
   - name: Nils Müller
     email: nils.mueller@strg.at
+  - name: Jasmin Müller
+    email: jasmin.mueller@strg.at
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
