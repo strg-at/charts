@@ -7,10 +7,12 @@ version: 0.1.6
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
-home: https://github.com/strg-at/tree/main/charts/behave
+home: https://github.com/strg-at/charts/tree/main/charts/behave
 maintainers:
   - name: Nils Müller
     email: nils.mueller@strg.at
+  - name: Jasmin Müller
+    email: jasmin.mueller@strg.at
 dependencies:
   - name: behave-blacklist-ui
     repository: https://strg-at.github.io/charts/
