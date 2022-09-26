@@ -51,11 +51,17 @@ env:
   # -- The postgres port to connect default to 5432
   PGPORT: "5432"
   # -- The postgres number of connections
+  PGUSER: ""
+  # -- The postgres password
+  PGPASSWORD: ""
+  # -- The postgres number of connections
   PGMAXCON: "1"
   # -- The redis ip or FQDN
   REDIS_HOST: ""
   # -- The redis port default to 6379
   REDIS_PORT: "6379"
+  # -- The redis password
+  REDIS_PASSWORD: ""
   # -- The deployment mode can either be `api` or `train-loop``
   MODE: "api"
   # -- Openblas config - the number of threads to use
