@@ -52,6 +52,18 @@ env:
   STORE_RAW_EVENTS: "false"
   # -- websocket listening port
   PORT: "3000"
+  # -- The postgres database name
+  PGDATABASE: ""
+  # -- The postgres host ip or FQDN
+  PGHOST: ""
+  # -- The postgres port to connect default to 5432
+  PGPORT: "5432"
+  # -- The postgres user
+  PGUSER: ""
+  # -- The postgres password
+  PGPASSWORD: ""
+  # -- The postgres number of connections
+  PGMAXCON: "5"
   # -- the nats server address
   NATS_SERVER: ""
   # -- the nats user
