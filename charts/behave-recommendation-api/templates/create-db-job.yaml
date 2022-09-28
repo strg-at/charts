@@ -36,4 +36,5 @@ spec:
               CREATE DATABASE {{ .Values.env.PGDATABASE }};
               CREATE USER {{ .Values.env.PGUSER }} WITH ENCRYPTED PASSWORD '{{ .Values.env.PGPASSWORD }}';
               GRANT ALL PRIVILEGES ON DATABASE {{ .Values.env.PGDATABASE }} TO {{ .Values.env.PGUSER }};
+              ALTER DATABASE {{ .Values.env.PGDATABASE }} OWNER TO {{ .Values.env.PGUSER }};
               SQL
