@@ -4,13 +4,14 @@
 
 STRG.BeHave tracking-service
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-tracking-service>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/behave-tracking-service>
 
 ## Maintainers
 
 | Name | Email | Url |
 | ---- | ------ | --- |
 | Nils Müller | <nils.mueller@strg.at> |  |
+| Jasmin Müller | <jasmin.mueller@strg.at> |  |
 
 ## Requirements
 
@@ -33,6 +34,12 @@ Kubernetes: `>=1.16.0-0`
 | env.NATS_USER | string | `""` | the nats user |
 | env.NODE_ENV | string | `"production"` | The default nodejs environment |
 | env.PAYLOAD_MAX_LENGTH | string | `"10000"` | the maximum length of bytes before droping websocket frames |
+| env.PGDATABASE | string | `""` | The postgres database name |
+| env.PGHOST | string | `""` | The postgres host ip or FQDN |
+| env.PGMAXCON | string | `"5"` | The postgres number of connections |
+| env.PGPASSWORD | string | `""` | The postgres password |
+| env.PGPORT | string | `"5432"` | The postgres port to connect default to 5432 |
+| env.PGUSER | string | `""` | The postgres user |
 | env.PORT | string | `"3000"` | websocket listening port |
 | env.STORE_RAW_EVENTS | string | `"false"` | store raw events in db (require a working db connection) |
 | env.TZ | string | `"UTC"` | The timezone in the container |

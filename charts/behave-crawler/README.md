@@ -4,13 +4,14 @@
 
 STRG.BeHave crawler
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-crawler>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/behave-crawler>
 
 ## Maintainers
 
 | Name | Email | Url |
 | ---- | ------ | --- |
 | Nils Müller | <nils.mueller@strg.at> |  |
+| Jasmin Müller | <jasmin.mueller@strg.at> |  |
 
 ## Requirements
 
@@ -34,9 +35,9 @@ Kubernetes: `>=1.16.0-0`
 | env.PGDATABASE | string | `""` | The postgres database name |
 | env.PGHOST | string | `""` | The postgres host ip or FQDN |
 | env.PGMAXCON | string | `"1"` | The postgres number of connections |
-| env.PGPASSWORD | string | `""` | The postrgres password |
+| env.PGPASSWORD | string | `""` | The postgres password |
 | env.PGPORT | string | `"5432"` | The postgres port to connect default to 5432 |
-| env.PGUSER | string | `""` | The postrgres user |
+| env.PGUSER | string | `""` | The postgres user |
 | env.PORT | string | `"3000"` | The node application port |
 | env.TZ | string | `"UTC"` | The timezone in the container |
 | image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/crawler"` | image repository |

@@ -8,7 +8,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: create-db-behave-crawler
+  name: create-db-behave-tracking-service
 spec:
   backoffLimit: 0
   template:

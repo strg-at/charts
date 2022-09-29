@@ -50,9 +50,9 @@ env:
   PGHOST: ""
   # -- The postgres port to connect default to 5432
   PGPORT: "5432"
-  # -- The postrgres user
+  # -- The postgres user
   PGUSER: ""
-  # -- The postrgres password
+  # -- The postgres password
   PGPASSWORD: ""
   # -- The postgres number of connections
   PGMAXCON: "1"
