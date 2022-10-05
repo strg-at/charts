@@ -3,6 +3,54 @@ entries:
   behave:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-10-05T18:57:53.94950725Z"
+    dependencies:
+    - condition: behave-blacklist-ui.enabled
+      name: behave-blacklist-ui
+      repository: https://strg-at.github.io/charts/
+      version: 0.2.1
+    - condition: behave-collaborative-filtering-service.enabled
+      name: behave-collaborative-filtering-service
+      repository: https://strg-at.github.io/charts/
+      version: 0.2.1
+    - condition: behave-content-indexer.enabled
+      name: behave-content-indexer
+      repository: https://strg-at.github.io/charts/
+      version: 1.0.0
+    - condition: behave-crawler.enabled
+      name: behave-crawler
+      repository: https://strg-at.github.io/charts/
+      version: 0.2.1
+    - condition: behave-engagement-service.enabled
+      name: behave-engagement-service
+      repository: https://strg-at.github.io/charts/
+      version: 0.2.1
+    - condition: behave-recommendation-api.enabled
+      name: behave-recommendation-api
+      repository: https://strg-at.github.io/charts/
+      version: 0.2.1
+    - condition: behave-tracking-service.enabled
+      name: behave-tracking-service
+      repository: https://strg-at.github.io/charts/
+      version: 0.2.1
+    description: STRG.BeHave composition chart
+    digest: c95ce4f82f39c79cfe2b4f65507e9de43ca84550279a9e72e194fefe00d7cb17
+    home: https://github.com/strg-at/charts/tree/main/charts/behave
+    keywords:
+    - behave
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: nils.mueller@strg.at
+      name: Nils Müller
+    - email: jasmin.mueller@strg.at
+      name: Jasmin Müller
+    name: behave
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/behave-0.2.2/behave-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-09-29T11:18:15.869254034Z"
     dependencies:
     - condition: behave-blacklist-ui.enabled
@@ -1254,4 +1302,4 @@ entries:
     urls:
     - https://github.com/strg-at/charts/releases/download/behave-tracking-service-0.1.2/behave-tracking-service-0.1.2.tgz
     version: 0.1.2
-generated: "2022-10-05T18:50:16.837690879Z"
+generated: "2022-10-05T18:57:53.949875668Z"
