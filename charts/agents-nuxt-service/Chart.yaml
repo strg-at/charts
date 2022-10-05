@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - agents
   - nuxt-service
-home: https://github.com/strg-at/tree/main/charts/agents-nuxt-service
+home: https://github.com/strg-at/charts/tree/main/charts/agents-nuxt-service
 maintainers:
   - name: Dominic Jurkic
     email: dominic.jurkic@strg.at

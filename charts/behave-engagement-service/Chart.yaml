@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
   - engagement-service
-home: https://github.com/strg-at/tree/main/charts/behave-engagement-service
+home: https://github.com/strg-at/charts/tree/main/charts/behave-engagement-service
 maintainers:
   - name: Nils Müller
     email: nils.mueller@strg.at

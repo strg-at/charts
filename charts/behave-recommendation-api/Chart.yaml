@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
   - recommendation-api
-home: https://github.com/strg-at/tree/main/charts/behave-recommendation-api
+home: https://github.com/strg-at/charts/tree/main/charts/behave-recommendation-api
 maintainers:
   - name: Nils Müller
     email: nils.mueller@strg.at

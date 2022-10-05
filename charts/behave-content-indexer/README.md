@@ -4,7 +4,7 @@
 
 STRG.BeHave content-indexer Helm chart for Kubernetes
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-content-indexer>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/behave-content-indexer>
 
 ## Maintainers
 

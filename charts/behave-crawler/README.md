@@ -4,7 +4,7 @@
 
 STRG.BeHave crawler
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-crawler>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/behave-crawler>
 
 ## Maintainers
 

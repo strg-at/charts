@@ -4,7 +4,7 @@
 
 STRG.BeHave collaborative-filtering-service
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-collaborative-filtering-service>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/behave-collaborative-filtering-service>
 
 ## Maintainers
 

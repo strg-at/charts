@@ -4,7 +4,7 @@
 
 STRG.BeHave blacklist-ui
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-blacklist-ui>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/behave-blacklist-ui>
 
 ## Maintainers
 

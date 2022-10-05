@@ -4,7 +4,7 @@
 
 STRG.BeHave agents-graphql-service
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/agents-graphql-service>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/agents-graphql-service>
 
 ## Maintainers
 
