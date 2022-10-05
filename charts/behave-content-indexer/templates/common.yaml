@@ -1,1 +1,9 @@
 {{ include "common.all" . }}
+
+{{- if eq .Values.ELASTIC_HOST  "" }}
+{{- fail "value for .Values.ELASTIC_HOST must be set" }}
+{{- end }}
+
+{{- if eq .Values.NATS_SERVER  "" }}
+{{- fail "value for .Values.NATS_SERVER must be set" }}
+{{- end }}
