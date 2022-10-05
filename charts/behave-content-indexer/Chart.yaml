@@ -3,7 +3,7 @@ type: application
 appVersion: 2.5.5
 description: STRG.BeHave content-indexer Helm chart for Kubernetes
 name: behave-content-indexer
-version: 0.1.4
+version: 0.2.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave
@@ -12,7 +12,9 @@ home: https://github.com/strg-at/charts/tree/main/charts/behave-content-indexer
 maintainers:
   - name: Nils Müller
     email: nils.mueller@strg.at
+  - name: Jasmin Müller
+    email: jasmin.mueller@strg.at
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
-    version: 4.3.0
+    version: 4.5.2

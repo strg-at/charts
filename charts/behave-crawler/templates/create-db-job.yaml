@@ -1,0 +1,41 @@
+{{- if eq .Values.jobs.createDB.PGADMINUSER  "" }}
+{{- fail "value for .Values.jobs.createDB.PGADMINUSER must be set" }}
+{{- end }}
+{{- if eq .Values.jobs.createDB.PGADMINPASS  "" }}
+{{- fail "value for .Values.jobs.createDB.PGADMINPASS must be set" }}
+{{- end }}
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: create-db-behave-crawler
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: postgres
+          image: postgres:14.5-alpine
+          imagePullPolicy: "IfNotPresent"
+          env:
+            - name: "PGADMINUSER"
+              value: {{ .Values.jobs.createDB.PGADMINUSER | quote }}
+            - name: "PGADMINPASS"
+              value: {{ .Values.jobs.createDB.PGADMINPASS | quote }}
+          {{- with .Values.env }}
+          {{- range $k, $v := . }}
+            - name: {{ $k }}
+              value: {{ $v | quote }}
+          {{- end }}
+          {{- end }}
+          command: [ "/bin/sh", "-c" ]
+          args:
+            - |
+              export PGPASSWORD="$PGADMINPASS"; psql -h $PGHOST -p $PGPORT -U $PGADMINUSER -d postgres << SQL
+              CREATE DATABASE {{ .Values.env.PGDATABASE }};
+              CREATE USER {{ .Values.env.PGUSER }} WITH ENCRYPTED PASSWORD '{{ .Values.env.PGPASSWORD }}';
+              GRANT ALL PRIVILEGES ON DATABASE {{ .Values.env.PGDATABASE }} TO {{ .Values.env.PGUSER }};
+              ALTER DATABASE {{ .Values.env.PGDATABASE }} OWNER TO {{ .Values.env.PGUSER }};
+              CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+              SQL

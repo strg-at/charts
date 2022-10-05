@@ -1,6 +1,6 @@
 # behave-crawler
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.4.4](https://img.shields.io/badge/AppVersion-1.4.4-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.4.4](https://img.shields.io/badge/AppVersion-1.4.4-informational?style=flat-square)
 
 STRG.BeHave crawler
 
@@ -11,6 +11,7 @@ STRG.BeHave crawler
 | Name | Email | Url |
 | ---- | ------ | --- |
 | Nils Müller | <nils.mueller@strg.at> |  |
+| Jasmin Müller | <jasmin.mueller@strg.at> |  |
 
 ## Requirements
 
@@ -18,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## Values
 
@@ -26,19 +27,23 @@ Kubernetes: `>=1.16.0-0`
 |-----|------|---------|-------------|
 | controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
 | env.BEHAVE_CLIENT_ID | string | `"strg"` | beHave client id used as logging reference aswel as for NATS message routing |
-| env.NATS_PASS | string | `""` | the nats password |
-| env.NATS_SERVER | string | `""` | the nats server address |
-| env.NATS_USER | string | `""` | the nats user |
+| env.NATS_PASS | string | `""` | The nats password |
+| env.NATS_SERVER | string | `""` | The nats server address |
+| env.NATS_USER | string | `""` | The nats user |
 | env.NODE_ENV | string | `"production"` | The default node environment |
 | env.NODE_LOG_LEVEL | string | `"info"` | The node log level |
 | env.PGDATABASE | string | `""` | The postgres database name |
 | env.PGHOST | string | `""` | The postgres host ip or FQDN |
 | env.PGMAXCON | string | `"1"` | The postgres number of connections |
+| env.PGPASSWORD | string | `""` | The postgres password |
 | env.PGPORT | string | `"5432"` | The postgres port to connect default to 5432 |
+| env.PGUSER | string | `""` | The postgres user |
 | env.PORT | string | `"3000"` | The node application port |
 | env.TZ | string | `"UTC"` | The timezone in the container |
 | image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/crawler"` | image repository |
 | image.tag | string | `""` | image tag |
+| jobs.createDB.PGADMINPASS | string | `""` | The postgres admin password to setup the database - must be set! |
+| jobs.createDB.PGADMINUSER | string | `""` | The postgres admin user to setup the database - must be set! |
 | probes.liveness.enabled | bool | `false` |  |
 | probes.readiness.enabled | bool | `false` |  |
 | probes.startup.enabled | bool | `false` |  |

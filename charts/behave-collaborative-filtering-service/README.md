@@ -1,6 +1,6 @@
 # behave-collaborative-filtering-service
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.14](https://img.shields.io/badge/AppVersion-1.0.14-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.14](https://img.shields.io/badge/AppVersion-1.0.14-informational?style=flat-square)
 
 STRG.BeHave collaborative-filtering-service
 
@@ -11,6 +11,7 @@ STRG.BeHave collaborative-filtering-service
 | Name | Email | Url |
 | ---- | ------ | --- |
 | Nils Müller | <nils.mueller@strg.at> |  |
+| Jasmin Müller | <jasmin.mueller@strg.at> |  |
 
 ## Requirements
 
@@ -18,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## Values
 
@@ -35,9 +36,12 @@ Kubernetes: `>=1.16.0-0`
 | env.PGDATABASE | string | `""` | The postgres database name |
 | env.PGHOST | string | `""` | The postgres host ip or FQDN |
 | env.PGMAXCON | string | `"1"` | The postgres number of connections |
+| env.PGPASSWORD | string | `""` | The postgres password |
 | env.PGPORT | string | `"5432"` | The postgres port to connect default to 5432 |
+| env.PGUSER | string | `""` | The postgres number of connections |
 | env.PYTHON_ENV | string | `"production"` | The default python environment |
 | env.REDIS_HOST | string | `""` | The redis ip or FQDN |
+| env.REDIS_PASSWORD | string | `""` | The redis password |
 | env.REDIS_PORT | string | `"6379"` | The redis port default to 6379 |
 | env.TZ | string | `"Europe/Vienna"` | The timezone in the container |
 | image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/collaborative-filtering-service"` | image repository |
