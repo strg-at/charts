@@ -18,6 +18,26 @@ A collection of charts we use in our projects.
 
 - [Helm 3][helm-url] installed, please check the [official documentation][helm-docu-url].
 
+### pre-commit
+
+To use pre-commit ensure that all dependencies are installed locally.
+
+### helm-docs
+
+To install helm-docs follow-up steps in https://github.com/norwoodj/helm-docs#installation
+Docs are generating documentation like README in each chart module.
+To generate or regenerate it locally you can call (you can see also logs)
+
+```bash
+helm-docs
+```
+
+or call (it will validate all files not just changes)
+
+```bash
+pre-commit run --all-files
+```
+
 <!-- USAGE EXAMPLES -->
 
 ## Usage
