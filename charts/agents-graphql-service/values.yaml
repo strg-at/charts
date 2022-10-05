@@ -15,7 +15,7 @@ controller:
 
 image:
   # -- image repository
-  repository: ""
+  repository: "eu.gcr.io/logical-sled-220910/strg-at/agents-graphql-api"
   # -- image tag
   tag: ""
   # -- image pull policy

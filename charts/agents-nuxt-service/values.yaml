@@ -15,7 +15,7 @@ controller:
 
 image:
   # -- image repository
-  repository: ""
+  repository: "eu.gcr.io/logical-sled-220910/strg-at/agents-nuxt-service"
   # -- image tag
   tag: ""
   # -- image pull policy
@@ -42,6 +42,15 @@ env:
   PORT: "3000"
   # -- The default node environment
   NODE_ENV: "production"
+  # Url for connection to graphql
+  GRAPHQL_URL: "http://localhost:4000"
+  # Host for keycloak authentication
+  KEYCLOAK_HOST: "http://localhost:8180"
+  # Identifier for client
+  KEYCLOAK_CLIENT_ID: client-app
+  # Home url for login page
+  HOME_URI: http://localhost:3000/login
+
 
 service:
   main:

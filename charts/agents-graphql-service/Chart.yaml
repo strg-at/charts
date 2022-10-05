@@ -12,6 +12,8 @@ home: https://github.com/strg-at/tree/main/charts/agents-graphql-service
 maintainers:
   - name: Dominic Jurkic
     email: dominic.jurkic@strg.at
+  - name: Dusan Scensny
+    email: dusan.scensny@smilingwords.eu
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com

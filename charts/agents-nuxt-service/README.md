@@ -1,16 +1,17 @@
-# behave-blacklist-ui
+# agents-nuxt-service
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.1.0](https://img.shields.io/badge/AppVersion-1.1.0-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
-STRG.BeHave blacklist-ui
+STRG.BeHave agents-nuxt-service
 
-**Homepage:** <https://github.com/strg-at/tree/main/charts/behave-blacklist-ui>
+**Homepage:** <https://github.com/strg-at/tree/main/charts/agents-nuxt-service>
 
 ## Maintainers
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| Nils Müller | <nils.mueller@strg.at> |  |
+| Dominic Jurkic | <dominic.jurkic@strg.at> |  |
+| Dusan Scensny | <dusan.scensny@smilingwords.eu> |  |
 
 ## Requirements
 
@@ -25,23 +26,21 @@ Kubernetes: `>=1.16.0-0`
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
-| env.BEHAVE_CLIENT_ID | string | `"strg"` | beHave client id used in logging reference aswel as in NATS message routing |
-| env.HTTP_AUTH_PASS | string | `""` | The password for the web app |
-| env.HTTP_AUTH_USER | string | `""` | The user for the web app |
-| env.NATS_PASS | string | `""` | the nats password |
-| env.NATS_SERVER | string | `""` | the nats server address |
-| env.NATS_USER | string | `""` | the nats user |
+| env.GRAPHQL_URL | string | `"http://localhost:4000"` |  |
+| env.HOME_URI | string | `"http://localhost:3000/login"` |  |
+| env.KEYCLOAK_CLIENT_ID | string | `"client-app"` |  |
+| env.KEYCLOAK_HOST | string | `"http://localhost:8180"` |  |
 | env.NODE_ENV | string | `"production"` | The default node environment |
-| env.PORT | string | `"8888"` | The application port |
+| env.PORT | string | `"3000"` | The application port |
 | env.TZ | string | `"UTC"` | The timezone in the container |
-| image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/blacklist-ui"` | image repository |
+| image.repository | string | `"eu.gcr.io/logical-sled-220910/strg-at/agents-nuxt-service"` | image repository |
 | image.tag | string | `""` | image tag |
 | securityContext.allowPrivilegeEscalation | bool | `false` | do not allow privilege escalation for security reasons |
 | securityContext.capabilities.drop[0] | string | `"ALL"` | drop all privileges as we dont need them |
 | securityContext.readOnlyRootFilesystem | bool | `true` | set root fs to read only for security reasons |
 | securityContext.runAsNonRoot | bool | `true` | do not run as root for security reasons |
 | securityContext.runAsUser | int | `1000` | run as user with <id> |
-| service.main.ports.http.port | int | `8888` |  |
+| service.main.ports.http.port | int | `3000` |  |
 | service.main.primary | bool | `true` |  |
 
 ----------------------------------------------
