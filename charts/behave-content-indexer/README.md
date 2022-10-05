@@ -1,6 +1,6 @@
 # behave-content-indexer
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.5.5](https://img.shields.io/badge/AppVersion-2.5.5-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.5.7](https://img.shields.io/badge/AppVersion-2.5.7-informational?style=flat-square)
 
 STRG.BeHave content-indexer Helm chart for Kubernetes
 
@@ -28,16 +28,25 @@ Kubernetes: `>=1.16.0-0`
 | controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
 | env.API | string | `"nats"` | content-indexer api to use |
 | env.BEHAVE_CLIENT_ID | string | `"strg"` | beHave client id used in logging reference aswel as in NATS message routing |
+| env.CONTENT_LANGUAGE | string | `"de"` | set content language |
 | env.ELASTIC_HOST | string | `""` | elasticsearch host ip or fqdn |
+| env.ELASTIC_LANGUAGE | string | `"german"` | set elasticsearch language |
+| env.ELASTIC_PASSWORD | string | `""` | elasticsearch password |
 | env.ELASTIC_PORT | string | `"9200"` | elasticsearch port defaults to 9200 |
+| env.ELASTIC_USERNAME | string | `""` | elasticsearch user |
+| env.ELASTIC_USE_SSL | string | `"True"` | use elasticsearch https |
+| env.ELASTIC_VERIFY_SSL_CERT | string | `"True"` | verify elasticsearch ssl cert |
 | env.NATS_PASS | string | `""` | the nats password |
 | env.NATS_SERVER | string | `""` | the nats server address |
 | env.NATS_USER | string | `""` | the nats user |
 | env.PYTHON_ENV | string | `"production"` | The default python environment |
+| env.TLDEXTRACT_CACHE | string | `"~/tldextract.cache"` | the tldextract cache path |
 | env.TZ | string | `"UTC"` | The timezone in the container |
-| env.USE_NOEN_PARSER | string | `"false"` | use the noen parser or not |
 | image.repository | string | `"eu.gcr.io/logical-sled-220910/strg/behave/content-indexer"` | image repository |
 | image.tag | string | `""` | image tag |
+| persistence.tmp.enabled | bool | `true` |  |
+| persistence.tmp.mountPath | string | `"/usr/tmp"` |  |
+| persistence.tmp.type | string | `"emptyDir"` |  |
 | probes.liveness.enabled | bool | `false` |  |
 | probes.readiness.enabled | bool | `false` |  |
 | probes.startup.enabled | bool | `false` |  |

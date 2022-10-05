@@ -1,9 +1,9 @@
 apiVersion: v2
 type: application
-appVersion: 2.5.5
+appVersion: 2.5.7
 description: STRG.BeHave content-indexer Helm chart for Kubernetes
 name: behave-content-indexer
-version: 0.2.1
+version: 1.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - behave

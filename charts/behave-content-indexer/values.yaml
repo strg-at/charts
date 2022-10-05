@@ -48,14 +48,26 @@ env:
   ELASTIC_HOST: ""
   # -- elasticsearch port defaults to 9200
   ELASTIC_PORT: "9200"
-  # -- use the noen parser or not
-  USE_NOEN_PARSER: "false"
+  # -- elasticsearch user
+  ELASTIC_USERNAME: ""
+  # -- elasticsearch password
+  ELASTIC_PASSWORD: ""
+  # -- use elasticsearch https
+  ELASTIC_USE_SSL: "True"
+  # -- verify elasticsearch ssl cert
+  ELASTIC_VERIFY_SSL_CERT: "True"
+  # -- set elasticsearch language
+  ELASTIC_LANGUAGE: german
   # -- the nats server address
   NATS_SERVER: ""
   # -- the nats user
   NATS_USER: ""
   # -- the nats password
   NATS_PASS: ""
+  # -- set content language
+  CONTENT_LANGUAGE: de
+  # -- the tldextract cache path
+  TLDEXTRACT_CACHE: ~/tldextract.cache
 
 # disable probes as we dont have a tcp or udp port open currently
 probes:
@@ -72,3 +84,10 @@ probes:
 service:
   main:
     enabled: false
+
+# provide writeable tmp directory
+persistence:
+  tmp:
+    enabled: true
+    type: emptyDir
+    mountPath: /usr/tmp
