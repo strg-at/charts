@@ -27,7 +27,7 @@ Kubernetes: `>=1.16.0-0`
 |-----|------|---------|-------------|
 | controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
 | env.GRAPHQL_URL | string | `""` |  |
-| env.HOME_URI | string | `"http://localhost:3000/login"` |  |
+| env.HOME_URI | string | `""` |  |
 | env.KEYCLOAK_CLIENT_ID | string | `"client-app"` |  |
 | env.KEYCLOAK_HOST | string | `""` |  |
 | env.NODE_ENV | string | `"production"` | The default node environment |

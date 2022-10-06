@@ -1,1 +1,10 @@
 {{ include "common.all" . }}
+{{- if eq .env.GRAPHQL_URL  "" }}
+{{- fail "value for .env.GRAPHQL_URL must be set" }}
+{{- end }}
+{{- if eq .env.KEYCLOAK_HOST  "" }}
+{{- fail "value for .env.KEYCLOAK_HOST must be set" }}
+{{- end }}
+{{- if eq .env.HOME_URI  "" }}
+{{- fail "value for .env.HOME_URI must be set" }}
+{{- end }}

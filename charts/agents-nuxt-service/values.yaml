@@ -49,7 +49,7 @@ env:
   # Identifier for client
   KEYCLOAK_CLIENT_ID: client-app
   # Home url for login page
-  HOME_URI: http://localhost:3000/login
+  HOME_URI: ""
 
 
 service:
