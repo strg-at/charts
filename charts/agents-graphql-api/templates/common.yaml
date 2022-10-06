@@ -1,1 +1,7 @@
 {{ include "common.all" . }}
+{{- if eq .env.HOST  "" }}
+{{- fail "value for .env.HOST must be set" }}
+{{- end }}
+{{- if eq .env.BASE_URL  "" }}
+{{- fail "value for .env.BASE_URL must be set" }}
+{{- end }}

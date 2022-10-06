@@ -26,11 +26,17 @@ Kubernetes: `>=1.16.0-0`
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
+| env.BASE_URL | string | `""` | base url for authetication service |
+| env.HOST | string | `""` | host for graphql |
 | env.NODE_ENV | string | `"production"` | The default node environment |
-| env.PORT | string | `"3000"` | The application port |
+| env.PORT | string | `"3000"` | The application port where it will be acessible |
 | env.TZ | string | `"UTC"` | The timezone in the container |
 | image.repository | string | `"eu.gcr.io/logical-sled-220910/strg-at/agents-graphql-api"` | image repository |
 | image.tag | string | `""` | image tag |
+| persistence.config.enabled | bool | `true` |  |
+| persistence.config.mountPath | string | `"/app/config.yaml"` |  |
+| persistence.config.name | string | `"agents-graphql-api-configmap"` |  |
+| persistence.config.type | string | `"configMap"` |  |
 | securityContext.allowPrivilegeEscalation | bool | `false` | do not allow privilege escalation for security reasons |
 | securityContext.capabilities.drop[0] | string | `"ALL"` | drop all privileges as we dont need them |
 | securityContext.readOnlyRootFilesystem | bool | `true` | set root fs to read only for security reasons |

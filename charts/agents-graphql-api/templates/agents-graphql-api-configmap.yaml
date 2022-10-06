@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: agents-graphql-api-configmap
+  labels:
+    {{- include "agents-graphql-api.labels" . | nindent 4 }}
+data:
+  app:
+    port: .env.PORT
+    host: .env.HOST
+
+  authService:
+    baseURL: .env.BASE_URL

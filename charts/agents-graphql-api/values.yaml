@@ -38,10 +38,14 @@ securityContext:
 env:
   # -- The timezone in the container
   TZ: UTC
-  # -- The application port
+  # -- The application port where it will be acessible
   PORT: "3000"
   # -- The default node environment
   NODE_ENV: "production"
+  # -- host for graphql
+  HOST: ""
+  # -- base url for authetication service
+  BASE_URL: ""
 
 service:
   main:
@@ -49,3 +53,10 @@ service:
     ports:
       http:
         port: 3000
+
+persistence:
+  config:
+    enabled: true
+    type: configMap
+    name: agents-graphql-api-configmap
+    mountPath: /app/config.yaml
