@@ -25,11 +25,11 @@ Kubernetes: `>=1.16.0-0`
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| config.app.host | string | `""` | host for graphql |
+| config.app.port | string | `""` | The application port where it will be acessible |
+| config.authService.baseUrl | string | `""` | base url for authentication service |
 | controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
-| env.BASE_URL | string | `""` | base url for authetication service |
-| env.HOST | string | `""` | host for graphql |
 | env.NODE_ENV | string | `"production"` | The default node environment |
-| env.PORT | string | `"3000"` | The application port where it will be acessible |
 | env.TZ | string | `"UTC"` | The timezone in the container |
 | image.repository | string | `"eu.gcr.io/logical-sled-220910/strg-at/agents-graphql-api"` | image repository |
 | image.tag | string | `""` | image tag |

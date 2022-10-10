@@ -38,14 +38,19 @@ securityContext:
 env:
   # -- The timezone in the container
   TZ: UTC
-  # -- The application port where it will be acessible
-  PORT: "3000"
   # -- The default node environment
   NODE_ENV: "production"
-  # -- host for graphql
-  HOST: ""
-  # -- base url for authetication service
-  BASE_URL: ""
+
+config:
+  app:
+    # -- The application port where it will be acessible
+    port: ""
+    # -- host for graphql
+    host: ""
+
+  authService:
+    # -- base url for authentication service
+    baseUrl: ""
 
 service:
   main:

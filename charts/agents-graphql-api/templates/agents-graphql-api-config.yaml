@@ -5,9 +5,7 @@ metadata:
   labels:
     {{- include "agents-graphql-api.labels" . | nindent 4 }}
 data:
-  app:
-    port: {{ .env.PORT }}
-    host: {{ .env.HOST }}
-
-  authService:
-    baseURL: {{ .env.BASE_URL }}
+  config.yaml: |
+  {{- with .Values.config }}
+  {{- toYaml . | nindent 4 }}
+  {{- end }}

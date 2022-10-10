@@ -1,7 +1,10 @@
 {{ include "common.all" . }}
-{{- if eq .env.HOST  "" }}
-{{- fail "value for .env.HOST must be set" }}
+{{- if eq .Values.config.app.port  "" }}
+{{- fail "value for .Values.config.app.port must be set" }}
 {{- end }}
-{{- if eq .env.BASE_URL  "" }}
-{{- fail "value for .env.BASE_URL must be set" }}
+{{- if eq .Values.config.app.host  "" }}
+{{- fail "value for .Values.config.app.host must be set" }}
+{{- end }}
+{{- if eq .Values.config.app.baseUrl  "" }}
+{{- fail "value for .Values.config.app.baseUrl must be set" }}
 {{- end }}
