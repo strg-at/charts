@@ -1,4 +1,4 @@
-# Default values for agents-graphql-apo.
+# Default values for agents-graphql-api.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 #
@@ -58,5 +58,5 @@ persistence:
   config:
     enabled: true
     type: configMap
-    name: agents-graphql-api-configmap
+    name: agents-graphql-api-config
     mountPath: /app/config.yaml

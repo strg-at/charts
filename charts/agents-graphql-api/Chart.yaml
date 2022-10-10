@@ -1,14 +1,14 @@
 apiVersion: v2
 type: application
 appVersion: 1.0.0
-description: STRG.BeHave agents-graphql-apo
-name: agents-graphql-apo
+description: STRG.BeHave agents-graphql-api
+name: agents-graphql-api
 version: 0.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - agents
   - graphql-api
-home: https://github.com/strg-at/charts/tree/main/charts/agents-graphql-apo
+home: https://github.com/strg-at/charts/tree/main/charts/agents-graphql-api
 maintainers:
   - name: Dominic Jurkic
     email: dominic.jurkic@strg.at

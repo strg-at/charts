@@ -1,10 +1,10 @@
-# agents-graphql-apo
+# agents-graphql-api
 
 ![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
-STRG.BeHave agents-graphql-apo
+STRG.BeHave agents-graphql-api
 
-**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/agents-graphql-apo>
+**Homepage:** <https://github.com/strg-at/charts/tree/main/charts/agents-graphql-api>
 
 ## Maintainers
 
@@ -35,7 +35,7 @@ Kubernetes: `>=1.16.0-0`
 | image.tag | string | `""` | image tag |
 | persistence.config.enabled | bool | `true` |  |
 | persistence.config.mountPath | string | `"/app/config.yaml"` |  |
-| persistence.config.name | string | `"agents-graphql-api-configmap"` |  |
+| persistence.config.name | string | `"agents-graphql-api-config"` |  |
 | persistence.config.type | string | `"configMap"` |  |
 | securityContext.allowPrivilegeEscalation | bool | `false` | do not allow privilege escalation for security reasons |
 | securityContext.capabilities.drop[0] | string | `"ALL"` | drop all privileges as we dont need them |
