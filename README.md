@@ -46,6 +46,41 @@ pre-commit run --all-files
 helm repo add gh-strg https://strg-at.github.io/charts/
 ```
 
+## Test template
+
+Go to module dir f.e. charts/agents-graphql-api
+
+```bash
+helm dependency build
+```
+
+Test all templates for module
+
+```bash
+helm template agents-graphql-api .
+```
+
+If you need to define some values you can do it with additional file, that will be set on top of values.yaml
+
+```bash
+helm template agents-graphql-api . --values test-values.yaml
+```
+
+Example of test-values for agents-graphql-api
+
+```yaml
+config:
+  app:
+    # -- The application port where it will be acessible
+    port: "0"
+    # -- host for graphql
+    host: "1"
+
+  authService:
+    # -- base url for authentication service
+    baseUrl: "2"
+```
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
