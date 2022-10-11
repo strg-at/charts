@@ -5,6 +5,9 @@
 {{- if eq .Values.env.KEYCLOAK_HOST  "" }}
 {{- fail "value for .Values.env.KEYCLOAK_HOST must be set" }}
 {{- end }}
+{{- if eq .Values.env.KEYCLOAK_CLIENT_ID  "" }}
+{{- fail "value for .Values.env.KEYCLOAK_CLIENT_ID must be set" }}
+{{- end }}
 {{- if eq .Values.env.HOME_URI  "" }}
 {{- fail "value for .Values.env.HOME_URI must be set" }}
 {{- end }}

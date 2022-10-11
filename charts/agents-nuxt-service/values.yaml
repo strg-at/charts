@@ -47,7 +47,7 @@ env:
   # Host for keycloak authentication
   KEYCLOAK_HOST: ""
   # Identifier for client
-  KEYCLOAK_CLIENT_ID: client-app
+  KEYCLOAK_CLIENT_ID: ""
   # Home url for login page
   HOME_URI: ""
 
