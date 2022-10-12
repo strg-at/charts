@@ -1,5 +1,55 @@
 apiVersion: v1
 entries:
+  agents-graphql-api:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-10-12T08:04:59.79364389Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave agents-graphql-api
+    digest: c7295e74a513ef34e37e7915ae76bf3df396d5a3f551f95d9d5e066c9117cb93
+    home: https://github.com/strg-at/charts/tree/main/charts/agents-graphql-api
+    keywords:
+    - agents
+    - graphql-api
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dominic.jurkic@strg.at
+      name: Dominic Jurkic
+    - email: dusan.scensny@smilingwords.eu
+      name: Dusan Scensny
+    name: agents-graphql-api
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/agents-graphql-api-0.1.0/agents-graphql-api-0.1.0.tgz
+    version: 0.1.0
+  agents-nuxt-service:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-10-12T08:05:00.111306528Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: STRG.BeHave agents-nuxt-service
+    digest: 200459952655ff12b50f39d92acef95b1cd13e7f82c94f8340f89a5072a4a4bc
+    home: https://github.com/strg-at/charts/tree/main/charts/agents-nuxt-service
+    keywords:
+    - agents
+    - nuxt-service
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dominic.jurkic@strg.at
+      name: Dominic Jurkic
+    - email: dusan.scensny@smilingwords.eu
+      name: Dusan Scensny
+    name: agents-nuxt-service
+    type: application
+    urls:
+    - https://github.com/strg-at/charts/releases/download/agents-nuxt-service-0.1.0/agents-nuxt-service-0.1.0.tgz
+    version: 0.1.0
   behave:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -1302,4 +1352,4 @@ entries:
     urls:
     - https://github.com/strg-at/charts/releases/download/behave-tracking-service-0.1.2/behave-tracking-service-0.1.2.tgz
     version: 0.1.2
-generated: "2022-10-05T18:57:53.949875668Z"
+generated: "2022-10-12T08:05:00.111418127Z"
