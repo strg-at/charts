@@ -22,8 +22,7 @@ Kubernetes: `>=1.16.0-0`
 | https://strg-at.github.io/charts/ | behave-blacklist-ui | 0.2.1 |
 | https://strg-at.github.io/charts/ | behave-collaborative-filtering-service | 0.2.1 |
 | https://strg-at.github.io/charts/ | behave-content-indexer | 1.0.0 |
-| https://strg-at.github.io/charts/ | behave-blacklist(behave-crawler) | 0.3.0 |
-| https://strg-at.github.io/charts/ | behave-crawler(behave-crawler) | 0.3.0 |
+| https://strg-at.github.io/charts/ | behave-crawler(behave-crawler) | 0.2.1 |
 | https://strg-at.github.io/charts/ | behave-engagement-service | 0.2.1 |
 | https://strg-at.github.io/charts/ | behave-recommendation-api | 0.2.1 |
 | https://strg-at.github.io/charts/ | behave-tracking-service | 0.2.1 |
