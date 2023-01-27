@@ -9,9 +9,8 @@
 #
 
 controller:
-  # -- Number of desired pods.
-  # We use 3 minimum to assure no outage durring rollout/preemtible node restarts
-  replicas: 3
+  # -- Number of desired pods. Only one instance needed.
+  replicas: 1
 
 image:
   # -- image repository
@@ -36,6 +35,8 @@ securityContext:
 env:
   # -- The timezone in the container
   TZ: UTC
+  # -- The app usage (crawler or blacklist)
+  APP: "crawler"
   # -- The default node environment
   NODE_ENV: production
   # -- The node log level
@@ -62,6 +63,8 @@ env:
   NATS_USER: ""
   # -- The nats password
   NATS_PASS: ""
+  # -- The crawl interval in days
+  CRAWL_INTERVAL: ""
 
 jobs:
   createDB:

@@ -1,6 +1,6 @@
 # behave
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
 
 STRG.BeHave composition chart
 
@@ -21,8 +21,9 @@ Kubernetes: `>=1.16.0-0`
 |------------|------|---------|
 | https://strg-at.github.io/charts/ | behave-blacklist-ui | 0.2.1 |
 | https://strg-at.github.io/charts/ | behave-collaborative-filtering-service | 0.2.1 |
-| https://strg-at.github.io/charts/ | behave-content-indexer | 0.2.1 |
-| https://strg-at.github.io/charts/ | behave-crawler | 0.2.1 |
+| https://strg-at.github.io/charts/ | behave-content-indexer | 1.0.0 |
+| https://strg-at.github.io/charts/ | behave-blacklist(behave-crawler) | 0.3.0 |
+| https://strg-at.github.io/charts/ | behave-crawler(behave-crawler) | 0.3.0 |
 | https://strg-at.github.io/charts/ | behave-engagement-service | 0.2.1 |
 | https://strg-at.github.io/charts/ | behave-recommendation-api | 0.2.1 |
 | https://strg-at.github.io/charts/ | behave-tracking-service | 0.2.1 |
@@ -32,6 +33,7 @@ Kubernetes: `>=1.16.0-0`
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | behave-blacklist-ui.enabled | bool | `false` | Enable the behave-blacklist-ui subchart |
+| behave-blacklist.enabled | bool | `false` | Enable the behave-blacklist subchart |
 | behave-collaborative-filtering-service.enabled | bool | `false` | Enable the behave-collaborative-filtering-service subchart |
 | behave-content-indexer.enabled | bool | `true` | Enable the behave-content-indexer subchart |
 | behave-crawler.enabled | bool | `true` | Enable the behave-crawler subchart |

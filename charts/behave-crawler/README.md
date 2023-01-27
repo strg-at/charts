@@ -1,6 +1,6 @@
 # behave-crawler
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.4.4](https://img.shields.io/badge/AppVersion-1.4.4-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.4.4](https://img.shields.io/badge/AppVersion-1.4.4-informational?style=flat-square)
 
 STRG.BeHave crawler
 
@@ -25,8 +25,10 @@ Kubernetes: `>=1.16.0-0`
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
+| controller.replicas | int | `1` | Number of desired pods. Only one instance needed. |
+| env.APP | string | `"crawler"` | The app usage (crawler or blacklist) |
 | env.BEHAVE_CLIENT_ID | string | `"strg"` | beHave client id used as logging reference aswel as for NATS message routing |
+| env.CRAWL_INTERVAL | string | `""` | The crawl interval in days |
 | env.NATS_PASS | string | `""` | The nats password |
 | env.NATS_SERVER | string | `""` | The nats server address |
 | env.NATS_USER | string | `""` | The nats user |
