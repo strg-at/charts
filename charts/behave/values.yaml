@@ -31,6 +31,10 @@ ingress:
             # -- Overrides the service port reference for this path
             port:
 
+behave-blacklist:
+  # -- Enable the behave-blacklist subchart
+  enabled: false
+
 behave-blacklist-ui:
   # -- Enable the behave-blacklist-ui subchart
   enabled: false

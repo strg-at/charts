@@ -25,8 +25,10 @@ Kubernetes: `>=1.16.0-0`
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| controller.replicas | int | `3` | Number of desired pods. We use 3 minimum to assure no outage durring rollout/preemtible node restarts |
+| controller.replicas | int | `1` | Number of desired pods. Only one instance needed. |
+| env.APP | string | `"crawler"` | The app usage (crawler or blacklist) |
 | env.BEHAVE_CLIENT_ID | string | `"strg"` | beHave client id used as logging reference aswel as for NATS message routing |
+| env.CRAWL_INTERVAL | string | `"14"` | The crawl interval in days |
 | env.NATS_PASS | string | `""` | The nats password |
 | env.NATS_SERVER | string | `""` | The nats server address |
 | env.NATS_USER | string | `""` | The nats user |

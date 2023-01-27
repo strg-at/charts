@@ -28,8 +28,14 @@ dependencies:
     version: 1.0.0
   - name: behave-crawler
     repository: https://strg-at.github.io/charts/
+    condition: behave-blacklist.enabled
+    version: 0.2.1
+    alias: behave-blacklist
+  - name: behave-crawler
+    repository: https://strg-at.github.io/charts/
     condition: behave-crawler.enabled
     version: 0.2.1
+    alias: behave-crawler
   - name: behave-engagement-service
     repository: https://strg-at.github.io/charts/
     condition: behave-engagement-service.enabled
