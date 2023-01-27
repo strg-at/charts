@@ -64,7 +64,7 @@ env:
   # -- The nats password
   NATS_PASS: ""
   # -- The crawl interval in days
-  CRAWL_INTERVAL: "14"
+  CRAWL_INTERVAL: ""
 
 jobs:
   createDB:
